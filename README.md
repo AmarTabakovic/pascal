@@ -1,5 +1,6 @@
 # pascal
 
+Inspired by [Ruurtjan Pul's project](https://pascal.ruurtjan.com/).
 ## Project setup
 ```
 npm install
