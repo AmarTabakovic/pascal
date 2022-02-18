@@ -6,7 +6,7 @@
     <h1>
       <a href=""> Pascal</a>
     </h1>
-    <div>
+    <div id="triangle-wrapper">
       <triangle />
     </div>
 
@@ -76,7 +76,7 @@ h1 {
   padding-top: 30px;
 }
 @media screen and (max-width: 999px) {
-  #line-list-wrapper {
+  #triangle-wrapper {
     display: none;
   }
   #mobile-message {
