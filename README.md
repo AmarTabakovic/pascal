@@ -1,25 +1,14 @@
 # pascal
 
 Inspired by [Ruurtjan Pul's project](https://pascal.ruurtjan.com/).
-## Project setup
+
+## Set up project
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Run server with hot-reload
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

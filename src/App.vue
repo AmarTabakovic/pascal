@@ -6,6 +6,10 @@
     <h1>
       <a href=""> Pascal</a>
     </h1>
+    <div>
+      <triangle />
+    </div>
+
     <p id="mobile-message">There is currently no support for mobile devices.</p>
   </div>
   <div id="footer">
@@ -15,10 +19,12 @@
 
 <script>
 import DarkThemeSwitcher from "./components/DarkThemeSwitcher.vue";
+import Triangle from "./components/Triangle.vue";
 export default {
   name: "App",
   components: {
     DarkThemeSwitcher,
+    Triangle,
   },
 };
 </script>
