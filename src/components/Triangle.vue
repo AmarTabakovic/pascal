@@ -18,7 +18,7 @@
             class="slider"
             name="height"
             min="2"
-            max="50"
+            max="75"
             v-model="triangleHeight"
           />
         </div>
