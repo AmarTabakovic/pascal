@@ -4,9 +4,6 @@
 <script>
 export default {
   name: "Circle",
-  data() {
-    return {};
-  },
   props: {
     value: Number,
     width: Number,
@@ -15,10 +12,14 @@ export default {
   },
   methods: {
     getColorForCircle(n, k) {
-      //const binomial = Math.round(this.calculateBinomialCoefficient(n, k));
       const binomial = this.calculateBinomialCoefficient(n, k);
-      const modulo = BigInt(this.mod);
-      const remainder = binomial % modulo;
+      let modulo;
+      if (this.mod < 1) {
+        return "#2e3440";
+      } else {
+        modulo = BigInt(this.mod);
+      }
+      const remainder = (binomial % modulo) % 10n;
       switch (remainder) {
         case 0n:
           return "#bf616a";
@@ -45,7 +46,11 @@ export default {
       }
     },
     calculateBinomialCoefficient(n, k) {
-      return this.factorial(n) / (this.factorial(k) * this.factorial(n - k));
+      try {
+        return this.factorial(n) / (this.factorial(k) * this.factorial(n - k));
+      } catch (e) {
+        return 1n;
+      }
     },
     factorial(num) {
       let v = 1n;
